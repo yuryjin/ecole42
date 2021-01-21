@@ -1,0 +1,1897 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Egyptosphere</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link rel="shortcut icon" type="image/png" href="logomakr.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="superstyles.css" type="text/css" />
+    <style type="text/css">
+      #display {
+        width: 100%;
+        height: 100px;
+        background: #800080;
+        transition: background 100ms;
+      }
+      .input {
+        display: block;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body style="background: #f7bb80;">
+    <div class="sitename">
+      <a href="#" class="sitelogo nav-item" data-target="home_sub"
+        >Egyptosphere</a
+      >
+      <div class="sitedesc">Ancient Egypt history hub</div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item" id="home_nav" data-target="home_sub">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item" id="history_nav" data-target="history_sub">
+            <a class="nav-link" href="#">History</a>
+          </li>
+          <li class="nav-item" id="religion_nav" data-target="religion_sub">
+            <a class="nav-link" href="#">Religion</a>
+          </li>
+          <li class="nav-item" id="culture_nav" data-target="culture_sub">
+            <a class="nav-link" href="#">Culture</a>
+          </li>
+          <li class="nav-item" id="life_nav" data-target="life_sub">
+            <a class="nav-link" href="#">Life</a>
+          </li>
+          <li class="nav-item" id="warfare_nav" data-target="warfare_sub">
+            <a class="nav-link" href="#">Warfare</a>
+          </li>
+          <li class="nav-item" id="economics_nav" data-target="economics_sub">
+            <a class="nav-link" href="#">Economics</a>
+          </li>
+          <li class="nav-item" id="writing_nav" data-target="writing_sub">
+            <a class="nav-link" href="#">Writing</a>
+          </li>
+          <li class="nav-item" id="geography_nav" data-target="geography_sub">
+            <a class="nav-link" href="#">Geography</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="pageant">
+      <div id="home_sub" style="display: block;">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#myCarousel" data-slide-to="5"></li>
+            <li data-target="#myCarousel" data-slide-to="6"></li>
+            <li data-target="#myCarousel" data-slide-to="7"></li>
+            <li data-target="#myCarousel" data-slide-to="8"></li>
+            <li data-target="#myCarousel" data-slide-to="9"></li>
+            <li data-target="#myCarousel" data-slide-to="10"></li>
+            <li data-target="#myCarousel" data-slide-to="11"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <div class="row">
+                <div class="col-xs-4">
+                  <img
+                    src="images/slideshow/img1.jpg"
+                    style="width: 650px; height: 620px;"
+                  />
+                </div>
+                <div class="col-xs-4">
+                  <img
+                    src="images/slideshow/img2.jpg"
+                    style="width: 650px; height: 620px;"
+                  />
+                </div>
+                <div class="col-xs-4">
+                  <img
+                    src="images/slideshow/img3.jpg"
+                    style="width: 650px; height: 620px;"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="row">
+                <div class="col-xs-4">
+                  <img
+                    src="images/slideshow/img2.jpg"
+                    style="width: 650px; height: 620px;"
+                  />
+                </div>
+                <div class="col-xs-4">
+                  <img
+                    src="images/slideshow/img3.jpg"
+                    style="width: 650px; height: 620px;"
+                  />
+                </div>
+                <div class="col-xs-4">
+                  <img
+                    src="images/slideshow/img4.jpg"
+                    style="width: 650px; height: 620px;"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="row">
+                <div class="col-xs-4">
+                  <img
+                    src="images/slideshow/img3.jpg"
+                    style="width: 650px; height: 620px;"
+                  />
+                </div>
+                <div class="col-xs-4">
+                  <img
+                    src="images/slideshow/img4.jpg"
+                    style="width: 650px; height: 620px;"
+                  />
+                </div>
+                <div class="col-xs-4">
+                  <img
+                    src="images/slideshow/img5.jpg"
+                    style="width: 650px; height: 620px;"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="row">
+                <div class="col-xs-4">
+                  <img
+                    src="images/slideshow/img4.jpg"
+                    style="width: 650px; height: 620px;"
+                  />
+                </div>
+                <div class="col-xs-4">
+                  <img
+                    src="images/slideshow/img5.jpg"
+                    style="width: 650px; height: 620px;"
+                  />
+                </div>
+                <div class="col-xs-4">
+                  <img
+                    src="images/slideshow/img6.jpg"
+                    style="width: 650px; height: 620px;"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="row">
+                <div class="col-xs-4">
+                  <img
+                    src="images/slideshow/img5.jpg"
+                    style="width: 650px; height: 620px;"
+                  />
+                </div>
+                <div class="col-xs-4">
+                  <img
+                    src="images/slideshow/img6.jpg"
+                    style="width: 650px; height: 620px;"
+                  />
+                </div>
+                <div class="col-xs-4">
+                  <img
+                    src="images/slideshow/img7.jpg"
+                    style="width: 650px; height: 620px;"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="row">
+                <div class="col-xs-4">
+                  <img
+                    src="images/slideshow/img6.jpg"
+                    style="width: 650px; height: 620px;"
+                  />
+                </div>
+                <div class="col-xs-4">
+                  <img
+                    src="images/slideshow/img7.jpg"
+                    style="width: 650px; height: 620px;"
+                  />
+                </div>
+                <div class="col-xs-4">
+                  <img
+                    src="images/slideshow/img8.jpg"
+                    style="width: 650px; height: 620px;"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="row">
+                <div class="col-xs-4">
+                  <img
+                    src="images/slideshow/img7.jpg"
+                    style="width: 650px; height: 620px;"
+                  />
+                </div>
+                <div class="col-xs-4">
+                  <img
+                    src="images/slideshow/img8.jpg"
+                    style="width: 650px; height: 620px;"
+                  />
+                </div>
+                <div class="col-xs-4">
+                  <img
+                    src="images/slideshow/img9.jpg"
+                    style="width: 650px; height: 620px;"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="row">
+                <div class="col-xs-4">
+                  <img
+                    src="images/slideshow/img8.jpg"
+                    style="width: 650px; height: 620px;"
+                  />
+                </div>
+                <div class="col-xs-4">
+                  <img
+                    src="images/slideshow/img9.jpg"
+                    style="width: 650px; height: 620px;"
+                  />
+                </div>
+                <div class="col-xs-4">
+                  <img
+                    src="images/slideshow/img10.jpg"
+                    style="width: 650px; height: 620px;"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="row">
+                <div class="col-xs-4">
+                  <img
+                    src="images/slideshow/img9.jpg"
+                    style="width: 650px; height: 620px;"
+                  />
+                </div>
+                <div class="col-xs-4">
+                  <img
+                    src="images/slideshow/img10.jpg"
+                    style="width: 650px; height: 620px;"
+                  />
+                </div>
+                <div class="col-xs-4">
+                  <img
+                    src="images/slideshow/img11.jpg"
+                    style="width: 650px; height: 620px;"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="row">
+                <div class="col-xs-4">
+                  <img
+                    src="images/slideshow/img10.jpg"
+                    style="width: 650px; height: 620px;"
+                  />
+                </div>
+                <div class="col-xs-4">
+                  <img
+                    src="images/slideshow/img11.jpg"
+                    style="width: 650px; height: 620px;"
+                  />
+                </div>
+                <div class="col-xs-4">
+                  <img
+                    src="images/slideshow/img12.jpg"
+                    style="width: 650px; height: 620px;"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="row">
+                <div class="col-xs-4">
+                  <img
+                    src="images/slideshow/img11.jpg"
+                    style="width: 650px; height: 620px;"
+                  />
+                </div>
+                <div class="col-xs-4">
+                  <img
+                    src="images/slideshow/img12.jpg"
+                    style="width: 650px; height: 620px;"
+                  />
+                </div>
+                <div class="col-xs-4">
+                  <img
+                    src="images/slideshow/img1.jpg"
+                    style="width: 650px; height: 620px;"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="row">
+                <div class="col-xs-4">
+                  <img
+                    src="images/slideshow/img12.jpg"
+                    style="width: 650px; height: 620px;"
+                  />
+                </div>
+                <div class="col-xs-4">
+                  <img
+                    src="images/slideshow/img1.jpg"
+                    style="width: 650px; height: 620px;"
+                  />
+                </div>
+                <div class="col-xs-4">
+                  <img
+                    src="images/slideshow/img2.jpg"
+                    style="width: 650px; height: 620px;"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a
+              class="left carousel-control"
+              href="#myCarousel"
+              data-slide="prev"
+            >
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="right carousel-control"
+              href="#myCarousel"
+              data-slide="next"
+            >
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-3 text-center icondivs">
+              <img
+                class="icons0 nav-item"
+                src="images/icons/history.png"
+                alt=""
+                data-target="history_sub"
+              />
+              <h2 class="iconname nav-item" data-target="history_sub">
+                History
+              </h2>
+            </div>
+            <div class="col-xs-3 text-center icondivs">
+              <img
+                class="icons0 nav-item"
+                src="images/icons/ankh.png"
+                alt=""
+                data-target="religion_sub"
+              />
+              <h2 class="iconname nav-item" data-target="religion_sub">
+                Religion
+              </h2>
+            </div>
+            <div class="col-xs-3 text-center icondivs">
+              <img
+                class="icons0 nav-item"
+                src="images/icons/culture.png"
+                alt=""
+                data-target="culture_sub"
+              />
+              <h2 class="iconname nav-item" data-target="culture_sub">
+                Culture
+              </h2>
+            </div>
+            <div class="col-xs-3 text-center icondivs">
+              <img
+                class="icons0 nav-item"
+                src="images/icons/life.png"
+                alt=""
+                data-target="life_sub"
+              />
+              <h2 class="iconname nav-item" data-target="life_sub">Life</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-3 text-center icondivs">
+              <img
+                class="icons0 nav-item"
+                src="images/icons/warfare.png"
+                alt=""
+                data-target="warfare_sub"
+              />
+              <h2 class="iconname nav-item" data-target="warfare_sub">
+                Warfare
+              </h2>
+            </div>
+            <div class="col-xs-3 text-center icondivs">
+              <img
+                class="icons0 nav-item"
+                src="images/icons/economy.png"
+                alt=""
+                data-target="economics_sub"
+              />
+              <h2 class="iconname nav-item" data-target="economics_sub">
+                Economics
+              </h2>
+            </div>
+            <div class="col-xs-3 text-center icondivs">
+              <img
+                class="icons0 nav-item"
+                src="images/icons/writing.png"
+                alt=""
+                data-target="writing_sub"
+              />
+              <h2 class="iconname nav-item" data-target="writing_sub">
+                Writing
+              </h2>
+            </div>
+            <div class="col-xs-3 text-center icondivs">
+              <img
+                class="icons0 nav-item"
+                src="images/icons/geography.png"
+                alt=""
+                data-target="geography_sub"
+              />
+              <h2 class="iconname nav-item" data-target="geography_sub">
+                Geography
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="history_sub" style="display: none;">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-4" style="border-right: 1px solid black;">
+              <h3 style="text-align: center;">
+                Early Dynastic Period of Egypt(c. 3000–2686 BCE)
+              </h3>
+              <p style="text-indent: 2em; text-align: justify;">
+                The Archaic or Early Dynastic Period of Egypt (also known as
+                Thinite Period, from Thinis, the supposed hometown of its
+                rulers) is the era immediately following the unification of
+                Upper and Lower Egypt c. 3100 BC. It is generally taken to
+                include the First and Second Dynasties, lasting from the end of
+                the Naqada III archaeological period until about 2686 BC, or the
+                beginning of the Old Kingdom. With the First Dynasty, the
+                capital moved from Thinis to Memphis with a unified Egypt ruled
+                by an Egyptian god-king. Abydos remained the major holy land in
+                the south. The hallmarks of ancient Egyptian civilization, such
+                as art, architecture and many aspects of religion, took shape
+                during the Early Dynastic period.
+              </p>
+              <p style="text-indent: 2em; text-align: justify;">
+                Before the unification of Egypt, the land was settled with
+                autonomous villages. With the early dynasties, and for much of
+                Egypt's history thereafter, the country came to be known as the
+                Two Lands. The pharaohs established a national administration
+                and appointed royal governors. The buildings of the central
+                government were typically open-air temples constructed of wood
+                or sandstone. The earliest Egyptian hieroglyphs appear just
+                before this period, though little is known of the spoken
+                language they represent.
+              </p>
+            </div>
+            <div class="col-xs-4" style="text-align: right;">
+              <p><b>Egypt Unified by pharaoh Menest</b></p>
+              <br />
+            </div>
+            <div class="col-xs-4" style="border-left: 1px solid black;">
+              <p><b>3000 BCE</b></p>
+              <br />
+            </div>
+          </div>
+          <div class="row">
+            <div
+              class="col-xs-4"
+              style="border-right: 1px solid black; text-align: center;"
+            >
+              <h3>Old Kingdom of Egypt (c. 2686–2181 BCE)</h3>
+              <p style="text-indent: 2em; text-align: justify;">
+                In ancient Egyptian history, the Old Kingdom is the period
+                spanning c. 2686–2181 BC. It is also known as the "Age of the
+                Pyramids" or the "Age of the Pyramid Builders", as it
+                encompasses the reigns of the great pyramid builders of the
+                Fourth Dynasty— among them King Sneferu, who perfected the art
+                of pyramid-building, and the kings Khufu, Khafre and Menkaure,
+                who constructed the pyramids at Giza.[1] Egypt attained its
+                first sustained peak of civilization during the Old Kingdom—the
+                first of three so-called "Kingdom" periods (followed by the
+                Middle Kingdom and New Kingdom) which mark the high points of
+                civilization in the lower Nile Valley.
+              </p>
+            </div>
+            <div class="col-xs-4" style="text-align: right;">
+              <p><b>First pyramids constructed</b></p>
+              <br />
+              <p><b>Bronze smelting</b></p>
+              <br />
+            </div>
+            <div class="col-xs-4" style="border-left: 1px solid black;">
+              <p><b>2700-2400 BCE</b></p>
+              <br />
+              <p><b>2200 BCE</b></p>
+              <br />
+            </div>
+          </div>
+          <div class="row">
+            <div
+              class="col-xs-4"
+              style="border-right: 1px solid black; text-align: center;"
+            >
+              <h3>First Intermediate Period of Egypt (c. 2181–2055 BCE)</h3>
+              <p style="text-indent: 2em; text-align: justify;">
+                The First Intermediate Period, often[according to whom?]
+                described as a "dark age" in ancient Egyptian history, spanned
+                approximately one hundred and twenty-five years, from c.
+                2181–2055 BC, after the end of the Old Kingdom. It comprises the
+                Seventh (although it is mostly considered spurious by
+                Egyptologists), Eighth, Ninth, Tenth, and part of the Eleventh
+                Dynasties. The concept of a "First Intermediate Period" was
+                coined in 1926 by Egyptologists Georg Steindorff and Henri
+                Frankfort.
+              </p>
+              <p style="text-indent: 2em; text-align: justify;">
+                Very little monumental evidence survives from this period,
+                especially from the beginning of the era. The First Intermediate
+                Period was a dynamic time where rule of Egypt was roughly
+                equally divided between two competing power bases. One of those
+                bases was at Heracleopolis in Lower Egypt, a city just south of
+                the Faiyum region. The other was at Thebes in Upper Egypt. It is
+                believed that during this time temples were pillaged and
+                violated, artwork was vandalized, and the statues of kings were
+                broken or destroyed as a result of the postulated political
+                chaos. These two kingdoms would eventually come into conflict,
+                leading to the conquest of the north by the Theban kings and the
+                reunification of Egypt under a single ruler, Mentuhotep II,
+                during the second part of the Eleventh Dynasty. This event
+                marked the beginning of the Middle Kingdom of Egypt.
+              </p>
+            </div>
+            <div class="col-xs-4" style="text-align: right;">
+              <p><b>Old Kingdom dissintigrated</b></p>
+              <br />
+            </div>
+            <div class="col-xs-4" style="border-left: 1px solid black;">
+              <p><b>2700-2400 BCE</b></p>
+              <br />
+            </div>
+          </div>
+          <div class="row">
+            <div
+              class="col-xs-4"
+              style="border-right: 1px solid black; text-align: center;"
+            >
+              <h3>Middle Kingdom of Egypt (c. 2050-1710 BCE)</h3>
+              <p style="text-indent: 2em; text-align: justify;">
+                The Middle Kingdom of Egypt (also known as The Period of
+                Reunification) is the period in the history of ancient Egypt
+                following a period of political division known as the First
+                Intermediate Period. The Middle Kingdom lasted from
+                approximately 2050 to 1710 BC, stretching from the reunification
+                of Egypt under the reign of Mentuhotep II in the Eleventh
+                Dynasty to the end of the Twelfth Dynasty. The kings of the
+                Eleventh Dynasty ruled from Thebes and the kings of the Twelfth
+                Dynasty ruled from el-Lisht.
+              </p>
+              <p style="text-indent: 2em; text-align: justify;">
+                The concept of the "Middle Kingdom" as one of three "golden
+                ages" was coined in 1845 by German Egyptologist Baron von
+                Bunsen, and its definition evolved significantly throughout the
+                19th and 20th centuries. Some scholars also include the
+                Thirteenth Dynasty of Egypt wholly into this period, in which
+                case the Middle Kingdom would end around 1650 BC, while others
+                only include it until Merneferre Ay around 1700 BC, last king of
+                this dynasty to be attested in both Upper and Lower Egypt.
+                During the Middle Kingdom period, Osiris became the most
+                important deity in popular religion. The Middle Kingdom was
+                followed by the Second Intermediate Period of Egypt, another
+                period of division that involved foreign invasions of the
+                country by the Hyksos of West Asia.
+              </p>
+            </div>
+            <div class="col-xs-4" style="text-align: right;">
+              <p>
+                <b
+                  >Mentuhotep I reunited Egypt and founded middle kingdom of
+                  Egypt</b
+                >
+              </p>
+              <br />
+              <p><b>First geometry rules formed</b></p>
+              <br />
+              <p><b>Story of Sinuhe</b></p>
+              <br />
+              <p><b>First mathematical papyruses</b></p>
+              <br />
+              <p><b>Senusret III expanded borders of Egypt</b></p>
+              <br />
+              <p><b>Middle Kingdom started to dissintigrate</b></p>
+              <br />
+            </div>
+            <div class="col-xs-4" style="border-left: 1px solid black;">
+              <p><b>2040 BCE</b></p>
+              <br />
+              <p><b>2000 BCE</b></p>
+              <br />
+              <p><b>1926 BCE</b></p>
+              <br />
+              <p><b>1890-1880 BCE</b></p>
+              <br />
+              <p><b>1878 BCE</b></p>
+              <br />
+              <p><b>1785 BCE</b></p>
+              <br />
+            </div>
+          </div>
+          <div class="row">
+            <div
+              class="col-xs-4"
+              style="border-right: 1px solid black; text-align: center;"
+            >
+              <h3>Second Intermediate Period of Egypt (c. 1650-1550 BCE)</h3>
+              <p style="text-indent: 2em; text-align: justify;">
+                The Second Intermediate Period marks a period when Ancient Egypt
+                fell into disarray for a second time, between the end of the
+                Middle Kingdom and the start of the New Kingdom. The concept of
+                a "Second Intermediate Period" was coined in 1942 by German
+                Egyptologist Hanns Stock.
+              </p>
+              <p style="text-indent: 2em; text-align: justify;">
+                It is best known as the period when the Hyksos people of West
+                Asia made their appearance in Egypt and whose reign comprised
+                the 15th dynasty founded by Salitis.
+              </p>
+            </div>
+            <div class="col-xs-4" style="text-align: right;">
+              <p><b>Start of second Intermediate Period of Egypt</b></p>
+              <br />
+            </div>
+            <div class="col-xs-4" style="border-left: 1px solid black;">
+              <p><b>1650 BCE</b></p>
+              <br />
+            </div>
+          </div>
+          <div class="row">
+            <div
+              class="col-xs-4"
+              style="border-right: 1px solid black; text-align: center;"
+            >
+              <h3>New Kingdom of Egypt (c. 1550–1069 BCE)</h3>
+              <p style="text-indent: 2em; text-align: justify;">
+                The New Kingdom, also referred to as the Egyptian Empire, is the
+                period in ancient Egyptian history between the 16th century BC
+                and the 11th century BC, covering the 18th, 19th, and 20th
+                dynasties of Egypt. Radiocarbon dating places the exact
+                beginning of the New Kingdom between 1570 BC and 1544 BC. The
+                New Kingdom followed the Second Intermediate Period and was
+                succeeded by the Third Intermediate Period. It was Egypt's most
+                prosperous time and marked the peak of its power.
+              </p>
+              <p style="text-indent: 2em; text-align: justify;">
+                The concept of a "New Kingdom" as one of three "golden ages" was
+                coined in 1845 by German Egyptologist Baron von Bunsen, and its
+                definition would evolve significantly throughout the 19th and
+                20th centuries. The later part of this period, under the 19th
+                and 20th Dynasties (1292–1069 BC), is also known as the
+                Ramesside period. It is named after the eleven Pharaohs that
+                took the name Ramesses, after Ramesses I, the founder of the
+                19th Dynasty.
+              </p>
+              <p style="text-indent: 2em; text-align: justify;">
+                Possibly as a result of the foreign rule of the Hyksos during
+                the Second Intermediate Period, the New Kingdom saw Egypt
+                attempt to create a buffer between the Levant and Egypt proper,
+                and during this time Egypt attained its greatest territorial
+                extent. Similarly, in response to very successful 17th-century
+                attacks during the Second Intermediate Period by the powerful
+                Kingdom of Kush, the rulers of the New Kingdom felt compelled to
+                expand far south into Nubia and to hold wide territories in the
+                Near East. In the north, Egyptian armies fought Hittite armies
+                for control of modern-day Syria.
+              </p>
+            </div>
+            <div class="col-xs-4" style="text-align: right;">
+              <p><b>Start of New Kingdom of Egypt</b></p>
+              <br />
+              <p><b>Ebers Papyrus written</b></p>
+              <br />
+            </div>
+            <div class="col-xs-4" style="border-left: 1px solid black;">
+              <p><b>1550 BCE</b></p>
+              <br />
+              <p><b>1500 BCE</b></p>
+              <br />
+            </div>
+          </div>
+          <div class="row">
+            <div
+              class="col-xs-4"
+              style="border-right: 1px solid black; text-align: center;"
+            >
+              <h3>Third Intermediate Period of Egypt (c. 1069–664 BCE)</h3>
+              <p style="text-indent: 2em; text-align: justify;">
+                The Third Intermediate Period of Ancient Egypt began with the
+                death of Pharaoh Ramesses XI in 1070 BC, which ended the New
+                Kingdom, and was eventually followed by the Late Period. Various
+                points are offered as the beginning for the latter era, though
+                it is most often regarded as dating from the foundation of the
+                Twenty-Sixth Dynasty by Psamtik I in 664 BC, following the
+                expulsion of the Nubian Kushite rulers of the Twenty-fifth
+                Dynasty by the Assyrians under King Assurbanipal. The concept of
+                a "Third Intermediate Period" was coined in 1978 by British
+                Egyptologist Kenneth Kitchen.
+              </p>
+              <p style="text-indent: 2em; text-align: justify;">
+                The period was one of decline and political instability,
+                coinciding with the Late Bronze Age collapse of civilizations in
+                the Near East and Eastern Mediterranean (including the Greek
+                Dark Ages). It was marked by division of the state for much of
+                the period and conquest and rule by foreigners.
+              </p>
+            </div>
+            <div class="col-xs-4" style="text-align: right;">
+              <p><b>Start of Third Intermediate Period of Egypt</b></p>
+              <br />
+              <p><b>Egypt conquered by Assyrian king Esarhaddon</b></p>
+              <br />
+            </div>
+            <div class="col-xs-4" style="border-left: 1px solid black;">
+              <p><b>1069 BCE</b></p>
+              <br />
+              <p><b>681 BCE</b></p>
+              <br />
+            </div>
+          </div>
+          <div class="row">
+            <div
+              class="col-xs-4"
+              style="border-right: 1px solid black; text-align: center;"
+            >
+              <h3>Late Period of ancient Egypt (c. 664–332 BCE)</h3>
+              <p style="text-indent: 2em; text-align: justify;">
+                The Late Period of ancient Egypt refers to the last flowering of
+                native Egyptian rulers after the Third Intermediate Period in
+                the 26th Saite Dynasty founded by Psamtik I, but includes the
+                time of Achaemenid Persian rule over Egypt after the conquest by
+                Cambyses II in 525 BC as well. The Late Period existed from 664
+                BC until 332 BC, following a period of foreign rule by the
+                Nubian 25th dynasty and beginning with a short period of
+                Neo-Assyrian suzerainty, with Psamtik I initially ruling as
+                their vassal. The period ended with the conquests of the Persian
+                Empire by Alexander the Great and establishment of the Ptolemaic
+                dynasty by his general Ptolemy I Soter, one of the Hellenistic
+                diadochi from Macedon in northern Greece. With the Macedonian
+                Greek conquest in the latter half of the 4th century BC, the age
+                of Hellenistic Egypt began.
+              </p>
+              <p style="text-indent: 2em; text-align: justify;">
+                Libyans and Persians alternated rule with native Egyptians, but
+                traditional conventions continued in the arts.
+              </p>
+            </div>
+            <div class="col-xs-4" style="text-align: right;">
+              <p>
+                <b>Psamtik I reunited Egypt and ended assyrian occupation</b>
+              </p>
+              <br />
+              <p><b>Amyrtaeus defeated persians</b></p>
+              <br />
+              <p><b>Egypt conquered by persian king Artaxerxes III</b></p>
+              <br />
+            </div>
+            <div class="col-xs-4" style="border-left: 1px solid black;">
+              <p><b>664 BCE</b></p>
+              <br />
+              <p><b>404 BCE</b></p>
+              <br />
+              <p><b>343 BCE</b></p>
+              <br />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col" style="text-align: center;">
+              <h1>Hellenistic Egypt</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div
+              class="col-xs-4"
+              style="border-right: 1px solid black; text-align: center;"
+            >
+              <h3>Alexander the Great and diadochi rule (c. 332–305 BCE)</h3>
+              <p style="text-indent: 2em; text-align: justify;">
+                Persian rule in Egypt ended with the defeat of the Achaemenid
+                Empire by Alexander the Great, who accepted the surrender of the
+                Persian satrap of Egypt Mazaces in 332BC, and marking the
+                beginning of Hellenistic rule in Egypt, which stabilized after
+                Alexander's death into the Ptolemaic Kingdom.
+              </p>
+              <h3>Ptolemaic Kingdom (c. 305–30 BCE)</h3>
+              <p style="text-indent: 2em; text-align: justify;">
+                The Ptolemaic Kingdom (/ˌtɒlɪˈmeɪ.ɪk/; Koinē Greek: Πτολεμαϊκὴ
+                βασιλεία, romanized: Ptolemaïkḕ basileía) was a Hellenistic
+                kingdom based in ancient Egypt. It was ruled by the Ptolemaic
+                dynasty, which started with Ptolemy I Soter's accession after
+                the death of Alexander the Great in 323 BC and which ended with
+                the death of Cleopatra and the Roman conquest in 30 BC.
+              </p>
+              <p style="text-indent: 2em; text-align: justify;">
+                The Ptolemaic Kingdom was founded in 305 BC by Ptolemy I Soter,
+                a diadochus originally from Macedon in northern Greece who
+                declared himself pharaoh of Egypt and created a powerful
+                Macedonian Greek dynasty that ruled an area stretching from
+                southern Syria to Cyrene and south to Nubia. Scholars also argue
+                that the kingdom was founded in 304 BC because of different use
+                of calendars: Ptolemy crowned himself in 304 BC on the ancient
+                Egyptian calendar, but in 305 BC on the ancient Macedonian
+                calendar; to resolve the issue, the year 305/4 was counted as
+                the first year of Ptolemaic Kingdom in Demotic papyri.
+              </p>
+              <p style="text-indent: 2em; text-align: justify;">
+                Alexandria, a Greek polis founded by Alexander the Great, became
+                the capital city and a major center of Greek culture and trade.
+                To gain recognition by the native Egyptian populace, the
+                Ptolemies named themselves as pharaohs. The later Ptolemies took
+                on Egyptian traditions by marrying their siblings per the Osiris
+                myth, had themselves portrayed on public monuments in Egyptian
+                style and dress, and participated in Egyptian religious life.
+                The Ptolemies were involved in foreign and civil wars that led
+                to the decline of the kingdom and its final conquest by Rome.
+                Their rivalry with the neighboring Seleucid Empire of West Asia
+                led to a series of Syrian Wars in which both powers jockeyed for
+                control of the Levant. Hellenistic culture continued to thrive
+                in Egypt throughout the Roman and Byzantine periods until the
+                Muslim conquest.
+              </p>
+            </div>
+            <div class="col-xs-4" style="text-align: right;">
+              <p>
+                <b>Egypt conquered by Alexander III the Great of Macedon</b>
+              </p>
+              <br />
+              <p><b>Fifth Syrian war</b></p>
+              <br />
+            </div>
+            <div class="col-xs-4" style="border-left: 1px solid black;">
+              <p><b>332 BCE</b></p>
+              <br />
+              <p><b>201 BCE</b></p>
+              <br />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col" style="text-align: center;">
+              <h1>Egypt as Roman Province</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div
+              class="col-xs-4"
+              style="border-right: 1px solid black; text-align: center;"
+            >
+              <h3>The Roman province of Egypt (c. 30 BCE–619 AD)</h3>
+              <p style="text-indent: 2em; text-align: justify;">
+                The Roman province of Egypt (Latin: Aegyptus, pronounced
+                [ae̯ˈɡʏptʊs]; Hellenistic Greek: Αἴγυπτος, romanized: Aígyptos,
+                pronounced [ɛ́ːɡyptos]) was established in 30 BC after Octavian
+                (the future Roman emperor Augustus) defeated his rival Mark
+                Antony, deposed Pharaoh Cleopatra, and annexed the Ptolemaic
+                Kingdom to the Roman Empire. The province encompassed most of
+                modern-day Egypt except for the Sinai Peninsula (which would
+                later be conquered by Trajan). Aegyptus was bordered by the
+                provinces of Crete and Cyrenaica to the west and Judea (later
+                Arabia Petraea) to the East.
+              </p>
+              <p style="text-indent: 2em; text-align: justify;">
+                The province came to serve as a major producer of grain for the
+                empire and had a highly developed urban economy. Aegyptus was by
+                far the wealthiest Eastern Roman province, and by far the
+                wealthiest Roman province outside of Italia. In Alexandria, its
+                capital, it possessed the largest port, and the second largest
+                city of the Roman Empire.
+              </p>
+              <p style="text-indent: 2em; text-align: justify;">
+                The population of Roman Egypt is unknown; estimates vary from 4
+                to 8 million.
+              </p>
+            </div>
+            <div class="col-xs-4" style="text-align: right;">
+              <p><b>Egypt annexed by Roman empire; death of Cleopatra</b></p>
+              <br />
+              <p><b>Christianity started to spread</b></p>
+              <br />
+              <p><b>Epidemy caused population collapse</b></p>
+              <br />
+              <p><b>Egyptians granted roman citizenship</b></p>
+              <br />
+              <p><b>Egypt temporarily under control of Palmyrene empire</b></p>
+              <br />
+              <p><b>Diocletian reforms</b></p>
+              <br />
+            </div>
+            <div class="col-xs-4" style="border-left: 1px solid black;">
+              <p><b>30 BCE</b></p>
+              <br />
+              <p><b>1 century AD</b></p>
+              <br />
+              <p><b>172 AD</b></p>
+              <br />
+              <p><b>212 AD</b></p>
+              <br />
+              <p><b>270 AD</b></p>
+              <br />
+              <p><b>284 AD</b></p>
+              <br />
+            </div>
+          </div>
+          <div class="row">
+            <div
+              class="col-xs-4"
+              style="border-right: 1px solid black; text-align: center;"
+            >
+              <h3>
+                Sasanian Egypt (c. 619–629 AD) and reintegration into Byzantine
+                empire (c. 629–641 AD)
+              </h3>
+              <p style="text-indent: 2em; text-align: justify;">
+                The Persian conquest of Egypt, beginning in AD 619 or 618, was
+                one of the last Sassanid triumphs in the Roman-Persian Wars
+                against Byzantium. From 619 - 628, they incorporated Egypt once
+                again within their territories, the previous (much longer) time
+                being under the Achaemenids. Khosrow II Parvêz had begun this
+                war in retaliation for the assassination of Emperor Maurice
+                (582–602) and had achieved a series of early successes,
+                culminating in the conquests of Jerusalem (614) and Alexandria
+                (619).
+              </p>
+              <p style="text-indent: 2em; text-align: justify;">
+                A Byzantine counteroffensive launched by Emperor Heraclius in
+                the spring of 622 shifted the advantage, and the war was brought
+                to an end by the fall of Khosrow on 25 February 628. The
+                Egyptians had no love of the emperor in Constantinople and put
+                up little resistance. Khosrow's son and successor, Kavadh II
+                Šêrôe (Šêrôy), who reigned until September, concluded a peace
+                treaty returning territories conquered by the Sassanids to the
+                Eastern Roman Empire.
+              </p>
+              <p style="text-indent: 2em; text-align: justify;">
+                The Persian conquest allowed Miaphysitism to resurface in the
+                open in Egypt, and when imperial rule was restored by Emperor
+                Heraclius in 629, the Miaphysites were persecuted and their
+                patriarch expelled. Egypt was thus in a state of both religious
+                and political alienation from the Empire when a new invader
+                appeared.
+              </p>
+            </div>
+            <div class="col-xs-4" style="text-align: right;">
+              <p><b>Egypt conquered by Sassanid Empire</b></p>
+              <br />
+              <p>
+                <b
+                  >Egypt returned back to Byzantine Empire as part of a peace
+                  treaty</b
+                >
+              </p>
+              <br />
+            </div>
+            <div class="col-xs-4" style="border-left: 1px solid black;">
+              <p><b>618</b></p>
+              <br />
+              <p><b>628</b></p>
+              <br />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col" style="text-align: center;">
+              <h1>Egypt as part of Islamic Caliphates</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div
+              class="col-xs-4"
+              style="border-right: 1px solid black; text-align: center;"
+            >
+              <h3>Egypt as part of Islamic Caliphates (c. 641–1517)</h3>
+              <p style="text-indent: 2em; text-align: justify;">
+                Following the Islamic conquest in 639, Lower Egypt was ruled at
+                first by governors acting in the name of the Rashidun Caliphs
+                and then the Ummayad Caliphs in Damascus, but in 747 the
+                Ummayads were overthrown. Throughout the Islamic rule, Askar was
+                named the capital and housed the ruling administration. The
+                conquest led to two separate provinces all under one ruler:
+                Upper and Lower Egypt. These two very distinct regions would be
+                heavily governed by the military and followed the demands handed
+                down by the governor of Egypt and imposed by the heads of their
+                communities.
+              </p>
+              <p style="text-indent: 2em; text-align: justify;">
+                Egypt was ruled by various dynasties from the start of Islamic
+                control in 639 and the end of it in the early 16th century. The
+                Umayyad period lasted from 658 until 750. Next came the Abbasid
+                period which focused on taxes and centralizing power. In 868 the
+                Tulunids, ruled by Ahmad ibn Tulun, expanded Egypt's territory
+                into the Levant. He would rule until his death in 884. After
+                years of turmoil under Ahmad ibn Tulun's successor, many
+                citizens defected back to the Abbasids and in 904 they would
+                reclaim power from the Tulunids. In 969 Egypt came under the
+                control of the Western caliphate and the Fatimids. This dynasty
+                would begin to fade after the death of their last caliph in
+                1171.
+              </p>
+              <p style="text-indent: 2em; text-align: justify;">
+                In 1174, Egypt came under the rule of Ayyubids. The Ayyubids
+                ruled from Damascus, not the Fatimid city of Cairo. This dynasty
+                fought against the Crusader States during the Fifth Crusade.
+                Ayyubid caliph Najm al-Din recaptured Jerusalem in 1240. He
+                introduced Mamluk forces into his army in order to hold off the
+                crusaders. This decision would be one he regretted.
+              </p>
+              <p style="text-indent: 2em; text-align: justify;">
+                The Ayyubids were overthrown by their bodyguards, known as the
+                Mamluks in 1252. The Mamluks ruled under the suzerainty of
+                Abbasid Caliphs until 1517, when Egypt became part of the
+                Ottoman Empire as Eyālet-i Mıṣr province.
+              </p>
+            </div>
+            <div class="col-xs-4" style="text-align: right;">
+              <p><b>Egypt conquered by Islamic Caliphate</b></p>
+              <br />
+              <p><b>Coptic Revolts</b></p>
+              <br />
+              <p><b>Tulunid dynasty reign</b></p>
+              <br />
+              <p><b>Abbasid Caliphate</b></p>
+              <br />
+              <p><b>Ikhshidid dynasty</b></p>
+              <br />
+              <p><b>Fatimid dynasty</b></p>
+              <br />
+              <p>
+                <b
+                  >Crusaders conquered Jerusalem. Threating Egyptian borders.</b
+                >
+              </p>
+              <br />
+              <p><b>Saladin rose to power. Ayyubid dynasty</b></p>
+              <br />
+              <p><b>Mamluk revolt. Mamluk dynasty reign</b></p>
+              <br />
+              <p><b>Mamluk stopped mongol invasion</b></p>
+              <br />
+              <p>
+                <b>Black death. plague devastated population of Egypt.</b>
+              </p>
+              <br />
+              <p><b>Burji dynasty</b></p>
+              <br />
+            </div>
+            <div class="col-xs-4" style="border-left: 1px solid black;">
+              <p><b>641</b></p>
+              <br />
+              <p><b>725-733</b></p>
+              <br />
+              <p><b>868-905</b></p>
+              <br />
+              <p><b>905-935</b></p>
+              <br />
+              <p><b>935-969</b></p>
+              <br />
+              <p><b>969-1171</b></p>
+              <br />
+              <p><b>15th July 1099</b></p>
+              <br />
+              <p><b>1171-1260</b></p>
+              <br />
+              <p><b>1250-1382</b></p>
+              <br />
+              <p><b>1260</b></p>
+              <br />
+              <p><b>1347</b></p>
+              <br />
+              <p><b>1382-1517</b></p>
+              <br />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col" style="text-align: center;">
+              <h1>Egypt as part of Turkish Sultanate</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div
+              class="col-xs-4"
+              style="border-right: 1px solid black; text-align: center;"
+            >
+              <h3>Late Period of ancient Egypt (c. 1517–1914)</h3>
+              <p style="text-indent: 2em; text-align: justify;">
+                The Eyalet of Egypt operated as an administrative division of
+                the Ottoman Empire from 1517 to 1867. It originated as a result
+                of the conquest of Mamluk Egypt by the Ottomans in 1517,
+                following the Ottoman–Mamluk War (1516–1517) and the absorption
+                of Syria into the Empire in 1516. The Ottomans administered
+                Egypt as an eyalet of the their Empire (Ottoman Turkish: ایالت
+                مصر‎‎ Eyālet-i Mıṣr) from 1517 until 1867, with an interruption
+                during the French occupation of 1798 to 1801.
+              </p>
+              <p style="text-indent: 2em; text-align: justify;">
+                Egypt always proved a difficult province for the Ottoman Sultans
+                to control, due in part to the continuing power and influence of
+                the Mamluks, the Egyptian military caste who had ruled the
+                country for centuries. As such, Egypt remained semi-autonomous
+                under the Mamluks until Napoleon Bonaparte's French forces
+                invaded in 1798. After Anglo-Turkish forces expelled the French
+                in 1801, Muhammad Ali Pasha, an Albanian military commander of
+                the Ottoman army in Egypt, seized power in 1805.
+              </p>
+              <p style="text-indent: 2em; text-align: justify;">
+                Egypt under the Muhammad Ali dynasty remained nominally an
+                Ottoman province. Istanbul granted Egypt the status of an
+                autonomous vassal state or Khedivate in 1867. Isma'il Pasha
+                (Khedive from 1863 to 1879) and Tewfik Pasha (Khedive from 1879
+                to 1892) governed Egypt as a quasi-independent state under
+                Ottoman suzerainty until the British occupation of 1882.
+                Nevertheless, the Khedivate of Egypt (1867–1914) remained a de
+                jure Ottoman province until 5 November 1914, when it was
+                declared a British protectorate in reaction to the Young Turks
+                of the Ottoman Empire joining the First World War on the side of
+                the Central Powers (October-November 1914).
+              </p>
+            </div>
+            <div class="col-xs-4" style="text-align: right;">
+              <p><b>Egypt conquered by Ottoman Empire</b></p>
+              <br />
+              <p>
+                <b
+                  >Egypt begin to be administrated directly by Ottoman Empire</b
+                >
+              </p>
+              <br />
+              <p><b>French invasion</b></p>
+              <br />
+              <p><b>Battle of the Pyramids</b></p>
+              <br />
+              <p><b>Battle of Abukir</b></p>
+              <br />
+              <p><b>British invasion</b></p>
+              <br />
+              <p><b>Mamluk massacre</b></p>
+              <br />
+              <p><b>Conquest of Sudan</b></p>
+              <br />
+              <p><b>Construction of Suez Canal</b></p>
+              <br />
+              <p><b>British occupation</b></p>
+              <br />
+              <p><b>Egypt became British colony</b></p>
+              <br />
+            </div>
+            <div class="col-xs-4" style="border-left: 1px solid black;">
+              <p><b>22th January. 1517</b></p>
+              <br />
+              <p><b>1576</b></p>
+              <br />
+              <p><b>1798-1801</b></p>
+              <br />
+              <p><b>1798</b></p>
+              <br />
+              <p><b>1799</b></p>
+              <br />
+              <p><b>1801</b></p>
+              <br />
+              <p><b>1th March. 1811</b></p>
+              <br />
+              <p><b>1859-1869</b></p>
+              <br />
+              <p><b>1882</b></p>
+              <br />
+              <p><b>1914</b></p>
+              <br />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col" style="text-align: center;">
+              <h1>British occupation</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div
+              class="col-xs-4"
+              style="border-right: 1px solid black; text-align: center;"
+            >
+              <h3>British occupation (1914–1953)</h3>
+              <p style="text-indent: 2em; text-align: justify;">
+                The history of Egypt under the British lasts from 1882, when it
+                was occupied by British forces during the Anglo-Egyptian War,
+                until 1956, when the last British forces withdrew in accordance
+                with the Anglo-Egyptian agreement of 1954 after the Suez Crisis.
+                The first period of British rule (1882–1914) is often called the
+                "veiled protectorate". During this time the Khedivate of Egypt
+                remained an autonomous province of the Ottoman Empire, and the
+                British occupation had no legal basis but constituted a de facto
+                protectorate over the country. This state of affairs lasted
+                until the Ottoman Empire joined the First World War on the side
+                of the Central Powers in November 1914 and Britain unilaterally
+                declared a protectorate over Egypt. The ruling khedive was
+                deposed and his successor, Hussein Kamel, compelled to declare
+                himself Sultan of Egypt independent of the Ottomans in December
+                1914.
+              </p>
+              <p style="text-indent: 2em; text-align: justify;">
+                The formal protectorate over Egypt did not long outlast the war.
+                It was brought to an end by the Unilateral Declaration of
+                Egyptian Independence on 28 February 1922. Shortly afterwards,
+                Sultan Fuad I declared himself King of Egypt, but the British
+                occupation continued, in accordance with several reserve clauses
+                in the declaration of independence. The situation was normalised
+                in the Anglo-Egyptian treaty of 1936, which granted Britain the
+                right to station troops in Egypt for the defence of the Suez
+                Canal, its link with the Indian Empire. Britain also continued
+                to control the training of the Egyptian Army. During the Second
+                World War (1939–45), Egypt came under attack from Italian Libya
+                on account of the British presence there, although Egypt itself
+                remained neutral until late in the war. After the war Egypt
+                sought to modify the treaty, but it was abrogated in its
+                entirety by an anti-British government in October 1951. After
+                the 1952 coup d'état, the British agreed to withdraw their
+                troops, and by June 1956 had done so. Britain went to war
+                against Egypt over the Suez Canal in late 1956, but with
+                insufficient international support was forced to back down.
+              </p>
+            </div>
+            <div class="col-xs-4" style="text-align: right;">
+              <p><b>Egypt became British colony</b></p>
+              <br />
+              <p><b>Egypt officially is British protectorate</b></p>
+              <br />
+              <p><b>Egypt constitution</b></p>
+              <br />
+              <p>
+                <b
+                  >Egypt is declared independent by Britain, but British
+                  military are still located at Suez Canal</b
+                >
+              </p>
+              <br />
+              <p><b>Arabo-Izraeli war</b></p>
+              <br />
+              <p>
+                <b>Britain withdrew all of their military assets from Egypt</b>
+              </p>
+              <br />
+              <p>
+                <b>Monarchy overthrown</b>
+              </p>
+              <br />
+            </div>
+            <div class="col-xs-4" style="border-left: 1px solid black;">
+              <p><b>1914</b></p>
+              <br />
+              <p><b>1914-1922</b></p>
+              <br />
+              <p><b>1923</b></p>
+              <br />
+              <p><b>1936</b></p>
+              <br />
+              <p><b>1948</b></p>
+              <br />
+              <p><b>1951</b></p>
+              <br />
+              <p><b>1952</b></p>
+              <br />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col" style="text-align: center;">
+              <h1>Modern Egypt</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div
+              class="col-xs-4"
+              style="border-right: 1px solid black; text-align: center;"
+            >
+              <h3>Republic of Egypt (1953–present)</h3>
+              <p style="text-indent: 2em; text-align: justify;">
+                The history of the Arab Republic of Egypt spans the period of
+                modern Egyptian history from the Egyptian Revolution of 1952 to
+                the present day, which saw the toppling of the monarchy of Egypt
+                and Sudan, the establishment of a presidential republic, and a
+                period of profound economic, and political change in Egypt, and
+                throughout the Arab world. The abolition of a monarchy and
+                aristocracy viewed widely as sympathetic to Western interests,
+                particularly since the ousting of Khedive Isma'il Pasha, over
+                seven decades earlier, helped strengthen the authentically
+                Egyptian character of the republic in the eyes of its
+                supporters. From then until now Egypt has always been an
+                independent country.
+              </p>
+              <p style="text-indent: 2em; text-align: justify;">
+                Gamal Abdel Nasser ended monarchical rule and established a
+                republic in Egypt, known as the Republic of Egypt, following the
+                1952 Egyptian revolution. Egypt was ruled autocratically by
+                three presidents over the following six decades: by Nasser from
+                1954 until his death in 1970, by Anwar Sadat from 1971 until his
+                assassination in 1981, and by Hosni Mubarak from 1981 until his
+                resignation in the face of the 2011 Egyptian revolution.
+              </p>
+              <p style="text-indent: 2em; text-align: justify;">
+                In 2012, after more than a year under the interim government of
+                the Supreme Council of the Armed Forces, with Field Marshal
+                Tantawi as its chairman, elections were held and the Islamist
+                Mohamed Morsi became the first democratically elected head of
+                state in the entire history of Egypt. In 2013, after millions of
+                Egyptians in huge rallies and demonstrations demanding Morsi's
+                resignation, the army announced the ousting of Morsi and
+                preparations for a new election. Adly Mahmoud Mansour Served as
+                the acting President of Egypt from 4 July 2013 to 8 June 2014
+                following the 2013 Egyptian coup d'état by the military which
+                deposed President Mohamed Morsi.
+              </p>
+              <p style="text-indent: 2em; text-align: justify;">
+                In 8 June 2014 Abdel Fattah el-Sisi became president of Egypt to
+                this day.
+              </p>
+            </div>
+            <div class="col-xs-4" style="text-align: right;">
+              <p><b>Republic established</b></p>
+              <br />
+              <p>
+                <b>Egypt recognized the right to self-determination of Sudan</b>
+              </p>
+              <br />
+              <p><b>Nationalization of Suez Canal</b></p>
+              <br />
+              <p>
+                <b
+                  >Military invasion of Britain, France and Israel. Israel
+                  occupied Sinai Peninsula</b
+                >
+              </p>
+              <br />
+              <p><b>Six-Day War</b></p>
+              <br />
+              <p><b>Anwar Sadat is elected as a new president</b></p>
+              <br />
+              <p><b>New constitution</b></p>
+              <br />
+              <p><b>Yom Kippur War</b></p>
+              <br />
+              <p>
+                <b
+                  >Sadat's visit to Israel. Start of a diplomatic peace
+                  process</b
+                >
+              </p>
+              <br />
+              <p>
+                <b
+                  >Peace Treaty with Israel. Sinai Peninsula went back to Egypt.
+                  Egypt exiled from Arab League</b
+                >
+              </p>
+              <br />
+              <p><b>Egypt reconstituted in Arab League</b></p>
+              <br />
+              <p><b>Abdel Fattah el-Sisi is elected as a new president</b></p>
+              <br />
+            </div>
+            <div class="col-xs-4" style="border-left: 1px solid black;">
+              <p><b>1953</b></p>
+              <br />
+              <p><b>1953</b></p>
+              <br />
+              <p><b>26th July, 1956</b></p>
+              <br />
+              <p><b>October, 1956 - March, 1957</b></p>
+              <br />
+              <p><b>5-10 th June, 1967</b></p>
+              <br />
+              <p><b>1970</b></p>
+              <br />
+              <p><b>1971</b></p>
+              <br />
+              <p><b>1973</b></p>
+              <br />
+              <p><b>1977</b></p>
+              <br />
+              <p><b>1979</b></p>
+              <br />
+              <br />
+              <br />
+              <p><b>1989</b></p>
+              <br />
+              <p><b>2014</b></p>
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="religion_sub" style="display: none;">
+        <div class="container" style="margin-top: 100px;">
+          <div class="row">
+            <div class="col">
+              <h1 style="text-align: center;">Religion of Ancient Egypt</h1>
+              <p style="text-indent: 2em; text-align: justify;">
+                Ancient Egyptian religion was a complex system of polytheistic
+                beliefs and rituals that formed an integral part of ancient
+                Egyptian society. It centered on the Egyptians' interactions
+                with many deities believed to be present in, and in control of,
+                the world. Rituals such as prayer and offerings were provided to
+                the gods to gain their favor. Formal religious practice centered
+                on the pharaohs, the rulers of Egypt, believed to possess divine
+                powers by virtue of their positions. They acted as
+                intermediaries between their people and the gods, and were
+                obligated to sustain the gods through rituals and offerings so
+                that they could maintain Ma'at, the order of the cosmos. The
+                state dedicated enormous resources to religious rituals and to
+                the construction of temples.
+              </p>
+            </div>
+            <div class="col">
+              <div
+                class="pic-frame"
+                style="background-image: url(images/main/Religion1.png);"
+              ></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="col">
+                <div
+                  class="pic-frame"
+                  style="background-image: url(images/main/Religion2.jpg);"
+                ></div>
+              </div>
+            </div>
+            <div class="col">
+              <h1 style="text-align: center;">Modern Religion</h1>
+              <p style="text-indent: 2em; text-align: justify;">
+                Islam is the dominant religion in Egypt with around an estimated
+                90% of the population. Almost the entirety of Egypt's Muslims
+                are Sunnis, with a small minority of Shia and Ahmadi Muslims.
+                The latter, however, are not recognized by Egypt. Islam has been
+                recognized as the state religion since 1980. Since there has
+                been no religious census, the actual percentage of Muslims is
+                not known: the percentage of Christians are estimated to be
+                between 8% to 12% according to sources cited in articles
+                Religion in Egypt and Christianity in Egypt.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="culture_sub" style="display: none;">
+        <div class="container" style="margin-top: 100px;">
+          <div class="row">
+            <div class="col">
+              <h1 style="text-align: center;">Art</h1>
+              <p style="text-indent: 2em; text-align: justify;">
+                The Egyptians were one of the first major civilizations to
+                codify design elements in art. The wall painting done in the
+                service of the Pharaohs followed a rigid code of visual rules
+                and meanings. Early Egyptian art is characterized by the absence
+                of linear perspective, which results in a seemingly flat space.
+                These artists tended to create images based on what they knew,
+                and not as much on what they saw. Objects in these artworks
+                generally do not decrease in size as they increase in distance
+                and there is little shading to indicate depth. Sometimes,
+                distance is indicated through the use of tiered space, where
+                more distant objects are drawn higher above the nearby objects,
+                but in the same scale and with no overlapping of forms. People
+                and objects are almost always drawn in profile.
+              </p>
+            </div>
+            <div class="col">
+              <div class="col">
+                <div
+                  class="pic-frame"
+                  style="background-image: url(images/main/Culture1.jpg);"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="col">
+                <div
+                  class="pic-frame"
+                  style="background-image: url(images/main/Culture2.jpg);"
+                ></div>
+              </div>
+            </div>
+            <div class="col">
+              <h1 style="text-align: center;">Science</h1>
+              <p style="text-indent: 2em; text-align: justify;">
+                The Akhmim wooden tablets, also known as the Cairo wooden
+                tablet, are two wooden writing tablets from ancient Egypt. They
+                each measure around 18 by 10 inches (460 mm × 250 mm) and are
+                covered with plaster. The tablets are inscribed on both sides.
+                The hieroglyphic inscriptions on the first tablet include a list
+                of servants, which is followed by a mathematical text.[1] The
+                text is dated to year 38 (it was at first thought to be from
+                year 28) of an otherwise unnamed king's reign. The general
+                dating to the early Egyptian Middle Kingdom combined with the
+                high regnal year suggests that the tablets may date to the reign
+                of the 12th dynasty pharaoh Senusret I, ca. 1950 BC.[2] The
+                second tablet also lists several servants and contains further
+                mathematical texts
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="life_sub" style="display: none;">
+        <div class="container" style="margin-top: 100px;">
+          <div class="row">
+            <div class="col">
+              <h1 style="text-align: center;">Agriculture</h1>
+              <p style="text-indent: 2em; text-align: justify;">
+                The civilization of ancient Egypt was indebted to the Nile River
+                and its dependable seasonal flooding. The river's predictability
+                and fertile soil allowed the Egyptians to build an empire on the
+                basis of great agricultural wealth. Egyptians are credited as
+                being one of the first groups of people to practice agriculture
+                on a large scale. This was possible because of the ingenuity of
+                the Egyptians as they developed basin irrigation. Their farming
+                practices allowed them to grow staple food crops, especially
+                grains such as wheat and barley, and industrial crops, such as
+                flax and papyrus.
+              </p>
+            </div>
+            <div class="col">
+              <div class="col">
+                <div
+                  class="pic-frame"
+                  style="background-image: url(images/main/Life1.png);"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="col">
+                <div
+                  class="pic-frame"
+                  style="background-image: url(images/main/Life2.jpg);"
+                ></div>
+              </div>
+            </div>
+            <div class="col">
+              <h1 style="text-align: center;">Daily routine</h1>
+              <p style="text-indent: 2em; text-align: justify;">
+                Most ancient Egyptians were farmers tied to the land. Their
+                dwellings were restricted to immediate family members, and were
+                constructed of mud-brick designed to remain cool in the heat of
+                the day. Each home had a kitchen with an open roof, which
+                contained a grindstone for milling grain and a small oven for
+                baking the bread. Walls were painted white and could be covered
+                with dyed linen wall hangings. Floors were covered with reed
+                mats, while wooden stools, beds raised from the floor and
+                individual tables comprised the furniture.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="warfare_sub" style="display: none;">
+        <div class="container" style="margin-top: 100px;">
+          <div class="row">
+            <div class="col">
+              <h1 style="text-align: center;">Army</h1>
+              <p style="text-indent: 2em; text-align: justify;">
+                During the Egyptian conquest, the Pharaoh would divide his army
+                into two parts, the North and the South. They would then be
+                further divided into four more armies named after the Egyptian
+                god's Ra, Amen, Ptah, Sutekh (of all the armies the Pharaoh
+                would align himself with Amen). From there he would pick a
+                commander in chief, generally princes of the royal house who
+                would then pick captains to enforce orders given down the chain
+                of command. During war times, the commander in chief was given
+                the job of selecting their captains, who were usually
+                lower-ranking princes of the royal house.
+              </p>
+            </div>
+            <div class="col">
+              <div class="col">
+                <div
+                  class="pic-frame"
+                  style="background-image: url(images/main/Warfare1.jpg);"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="col">
+                <div
+                  class="pic-frame"
+                  style="background-image: url(images/main/Warfare2.jpg);"
+                ></div>
+              </div>
+            </div>
+            <div class="col">
+              <h1 style="text-align: center;">Navy</h1>
+              <p style="text-indent: 2em; text-align: justify;">
+                Egypt has had a navy since Ancient Egyptian times. The Ancient
+                Egyptian Navy was a vital part of the military of ancient Egypt,
+                helping to transport troops along the Nile River and fighting
+                many battles such as the Battle of the Delta against the Sea
+                Peoples. The Ancient Egyptian Navy imported many of their ships
+                from countries such as the Kingdom of Cyprus. Several Ancient
+                Egyptian solar ships are still present today. In the early
+                1800s, Egypt under Muhammad Ali Pasha developed a modern
+                European-style army and navy.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="economics_sub" style="display: none;">
+        <div class="container" style="margin-top: 100px;">
+          <div class="row">
+            <div class="col">
+              <h1 style="text-align: center;">Commerce</h1>
+              <p style="text-indent: 2em; text-align: justify;">
+                A combination of favorable geographical features contributed to
+                the success of ancient Egyptian culture, the most important of
+                which was the rich fertile soil resulting from annual
+                inundations of the Nile River. The ancient Egyptians were thus
+                able to produce an abundance of food, allowing the population to
+                devote more time and resources to cultural, technological, and
+                artistic pursuits. Land management was crucial in ancient Egypt
+                because taxes were assessed based on the amount of land a person
+                owned.
+              </p>
+            </div>
+            <div class="col">
+              <div class="col">
+                <div
+                  class="pic-frame"
+                  style="background-image: url(images/main/Economics1.jpg);"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="col">
+                <div
+                  class="pic-frame"
+                  style="background-image: url(images/main/Economics2.jpg);"
+                ></div>
+              </div>
+            </div>
+            <div class="col">
+              <h1 style="text-align: center;">Trade</h1>
+              <p style="text-indent: 2em; text-align: justify;">
+                The ancient Egyptians engaged in trade with their foreign
+                neighbors to obtain rare, exotic goods not found in Egypt. In
+                the Predynastic Period, they established trade with Nubia to
+                obtain gold and incense. They also established trade with
+                Palestine, as evidenced by Palestinian-style oil jugs found in
+                the burials of the First Dynasty pharaohs. An Egyptian colony
+                stationed in southern Canaan dates to slightly before the First
+                Dynasty. Narmer had Egyptian pottery produced in Canaan and
+                exported back to Egypt.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="writing_sub" style="display: none;">
+        <div class="container" style="margin-top: 100px;">
+          <div class="row">
+            <div class="col">
+              <h1 style="text-align: center;">Hieroglyphs</h1>
+              <p style="text-indent: 2em; text-align: justify;">
+                Egyptian hieroglyphs were the formal writing system used in
+                Ancient Egypt. Hieroglyphs combined logographic, syllabic and
+                alphabetic elements, with a total of some 1,000 distinct
+                characters. Cursive hieroglyphs were used for religious
+                literature on papyrus and wood. The later hieratic and demotic
+                Egyptian scripts were derived from hieroglyphic writing, as was
+                the Proto-Sinaitic script that later evolved into the Phoenician
+                alphabet. Through the Phoenician alphabet's major child systems,
+                the Greek and Aramaic scripts, the Egyptian hieroglyphic script
+                is ancestral to the majority of scripts in modern use, most
+                prominently the Latin and Cyrillic scripts (through Greek) and
+                the Arabic script and Brahmic family of scripts (through
+                Aramaic).
+              </p>
+            </div>
+            <div class="col">
+              <div class="col">
+                <div
+                  class="pic-frame"
+                  style="background-image: url(images/main/Writing1.jpg);"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="col">
+                <div
+                  class="pic-frame"
+                  style="background-image: url(images/main/Writing2.jpg);"
+                ></div>
+              </div>
+            </div>
+            <div class="col">
+              <h1 style="text-align: center;">Famous pieces of literature</h1>
+              <p style="text-indent: 2em; text-align: justify;">
+                The ancient Egyptians wrote works on papyrus as well as walls,
+                tombs, pyramids, obelisks and more. Perhaps the best known
+                example of ancient Jehiel literature is the Story of Sinuhe;
+                other well-known works include the Westcar Papyrus and the Ebers
+                papyrus, as well as the famous Book of the Dead. While most
+                literature in ancient Egypt was so-called "Wisdom literature"
+                (that is, literature meant for instruction rather than
+                entertainment), there also existed myths, stories and
+                biographies solely for entertainment purposes. The autobiography
+                has been called the oldest form of Egyptian literature.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="geography_sub" style="display: none;">
+        <div class="container" style="margin-top: 100px;">
+          <div class="row">
+            <div class="col">
+              <h1 style="text-align: center;">Unique location</h1>
+              <p style="text-indent: 2em; text-align: justify;">
+                Amongst all civilizations and nations, Egypt has always
+                maintained a unique position. Historically, Egypt is universally
+                acknowledged as the world's most ancient state with a unified
+                societal entity within its current geographical borders.Through
+                this area, there runs the River Nile starting from the Great
+                Lakes in the heart of Africa, through northern Sudan where the
+                Ethiopian tributaries collecting rainwater flows into its main
+                course.Running past the cataract area south of Aswan, it calms
+                down, flowing smoothly down to its mouth on the Mediterranean
+                Sea.
+              </p>
+            </div>
+            <div class="col">
+              <div class="col">
+                <div
+                  class="pic-frame"
+                  style="background-image: url(images/main/Geography1.jpeg);"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="col">
+                <div
+                  class="pic-frame"
+                  style="background-image: url(images/main/Geography2.jpg);"
+                ></div>
+              </div>
+            </div>
+            <div class="col">
+              <h1 style="text-align: center;">Geopolitics</h1>
+              <p style="text-indent: 2em; text-align: justify;">
+                Asia, Africa, the Mediterranean, the Red Sea, the Middle East,
+                and the Nile Basin are all geographic entities in which Egypt is
+                either part of or is on the periphery of. This geographic
+                position makes Egypt a crossroads between two continents and
+                several geopolitical regions.
+              </p>
+              <p style="text-indent: 2em; text-align: justify;">
+                In terms of bodies of water, it is surrounded by the
+                Mediterranean and the Red Sea, for which it ensures the junction
+                through the Suez Canal. This connection links the two seas and
+                is also the path that joins the Indian and Atlantic oceans. The
+                giant Nile River also traverses the country, carrying water and
+                alluvium, building links and relationships, and ensuring
+                encounters between civilizations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script src="bootstrap-4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(".nav-item").click(function () {
+        $("#content div").hide();
+        var target = "#" + $(this).data("target");
+        $(target).show().siblings("div").hide();
+      });
+    </script>
+
+    <script src="script.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

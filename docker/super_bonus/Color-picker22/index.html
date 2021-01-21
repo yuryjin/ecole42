@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>СolorPicker</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/5.1.1/math.js type="text/javascript"></script>
+  <style type="text/css">
+
+  </style>
+</head>
+
+<body style="background: LightBlue">
+  <div class="wrapper">
+    <div class="container-fluid">
+      <div class="papa">
+
+
+
+
+
+        <div class="container wrappo" style="padding: 0px 200px 0px 200px">
+          <div class="wrappo-inside">
+            <div class="wrapp-not-text"></div>
+
+
+
+            <div class="row">
+              <div class="col-4" style="background: LightBlue">
+
+              </div>
+              <div class="col-8">
+
+                <div>
+                </div>
+
+
+
+
+              </div>
+
+            </div>
+
+
+
+          </div>
+        </div>
+
+
+
+
+
+        <div class="container">
+          <div class="row">
+            <div class="col" id="header" style="background: LightBlue">
+              <h1>Color picker</h1>
+            </div>
+          </div>
+          <div class="row" style="border: 1px solid grey;">
+            <div class="col-4">
+              <div class="row">
+                <div class="col-12" style="border: 1px solid grey;">
+                  <div class="values-menu">
+                    <p><b><strong id="namevalue"></strong></b></p>
+                    <p><strong id="codevalue">Code: </strong></p>
+                    <p><strong id="rgbvalue"></strong></p>
+                    <p><strong id="hslvalue">hsl()</strong></p>
+                  </div>
+                </div>
+                <div class="col-12" style="border: 1px solid grey; padding-bottom: 30px;">
+                  <div class="inputmenu">
+                    <h3 style="text-align: center">Choose a color</h3>
+                    <div class="colmap" style="text-align: center">
+                      <img id="map" src="images/colormap.gif" usemap="#colormap" alt="Something went wrong"
+                        style="margin: 10px; text-align: center;">
+                      <map id="colormap" name="colormap">
+                        <area style="cursor:pointer" shape="rect" coords="3, 3, 23, 23" href="#"
+                          alt="Something went wrong" onclick="changecolor(0, 0, 255, 1, 240, 100, 50)">
+                        <area style="cursor:pointer" shape="rect" coords="23, 3, 43, 23" href="#"
+                          alt="Something went wrong" onclick="changecolor(255, 0, 0, 1, 0, 100, 50)">
+                        <area style="cursor:pointer" shape="rect" coords="43, 3, 63, 23" href="#"
+                          alt="Something went wrong" onclick="changecolor(255, 255, 0, 1, 60, 100, 50)">
+                        <area style="cursor:pointer" shape="rect" coords="63, 3, 83, 23" href="#"
+                          alt="Something went wrong" onclick="changecolor(128, 0, 128, 1, 300, 100, 25)">
+                        <area style="cursor:pointer" shape="rect" coords="83, 3, 103, 23" href="#"
+                          alt="Something went wrong" onclick="changecolor(0, 128, 0, 1, 120, 100, 25)">
+
+                        <area style="cursor:pointer" shape="rect" coords="3, 23, 23, 43" href="#"
+                          alt="Something went wrong" onclick="changecolor(255, 165, 0, 1, 39, 100, 50)">
+                        <area style="cursor:pointer" shape="rect" coords="23, 23, 43, 43" href="#"
+                          alt="Something went wrong" onclick="changecolor(173, 216, 230, 1, 195, 53, 79)">
+                        <area style="cursor:pointer" shape="rect" coords="43, 23, 63, 43" href="#"
+                          alt="Something went wrong" onclick="changecolor(255, 255, 255, 1, 0, 0, 100)">
+                        <area style="cursor:pointer" shape="rect" coords="63, 23, 83, 43" href="#"
+                          alt="Something went wrong" onclick="changecolor(0, 0, 0, 1, 0, 0, 0)">
+                        <area style="cursor:pointer" shape="rect" coords="83, 23, 103, 43" href="#"
+                          alt="Something went wrong" onclick="changecolor(165, 42, 42, 1, 0, 59, 41)">
+
+                        <area style="cursor:pointer" shape="rect" coords="3, 43, 23, 63" href="#"
+                          alt="Something went wrong" onclick="changecolor(0, 128, 128, 1, 180, 100, 25)">
+                        <area style="cursor:pointer" shape="rect" coords="23, 43, 43, 63" href="#"
+                          alt="Something went wrong" onclick="changecolor(102, 51, 153, 1, 270, 50, 40)">
+                        <area style="cursor:pointer" shape="rect" coords="43, 43, 63, 63" href="#"
+                          alt="Something went wrong" onclick="changecolor(0, 255, 0, 1, 120, 100, 50)">
+                        <area style="cursor:pointer" shape="rect" coords="63, 43, 83, 63" href="#"
+                          alt="Something went wrong" onclick="changecolor(128, 128, 128, 1, 0, 0, 50)">
+                        <area style="cursor:pointer" shape="rect" coords="83, 43, 103, 63" href="#"
+                          alt="Something went wrong" onclick="changecolor(0, 100, 0, 1, 120, 100, 20)">
+
+                        <area style="cursor:pointer" shape="rect" coords="3, 63, 23, 83" href="#"
+                          alt="Something went wrong" onclick="changecolor(160, 82, 45, 1, 19, 56, 40)">
+                        <area style="cursor:pointer" shape="rect" coords="23, 63, 43, 83" href="#"
+                          alt="Something went wrong" onclick="changecolor(210, 180, 140, 1, 34, 44, 69)">
+                        <area style="cursor:pointer" shape="rect" coords="43, 63, 63, 83" href="#"
+                          alt="Something went wrong" onclick="changecolor(245, 222, 179, 1, 39, 77, 83)">
+                        <area style="cursor:pointer" shape="rect" coords="63, 63, 83, 83" href="#"
+                          alt="Something went wrong" onclick="changecolor(154, 205, 50, 1, 80, 61, 50)">
+                        <area style="cursor:pointer" shape="rect" coords="83, 63, 103, 83" href="#"
+                          alt="Something went wrong" onclick="changecolor(240, 230, 140, 1, 54, 77, 75)">
+
+                        <area style="cursor:pointer" shape="rect" coords="3, 83, 23, 103" href="#"
+                          alt="Something went wrong" onclick="changecolor(255, 215, 0, 1, 51, 100, 50)">
+                        <area style="cursor:pointer" shape="rect" coords="23, 83, 43, 103" href="#"
+                          alt="Something went wrong" onclick="changecolor(218, 165, 32, 1, 43, 74, 49)">
+                        <area style="cursor:pointer" shape="rect" coords="43, 83, 63, 103" href="#"
+                          alt="Something went wrong" onclick="changecolor(25, 25, 112, 1, 240, 64, 27)">
+                        <area style="cursor:pointer" shape="rect" coords="63, 83, 83, 103" href="#"
+                          alt="Something went wrong" onclick="changecolor(199, 21, 133, 1, 322, 81, 43)">
+                        <area style="cursor:pointer" shape="rect" coords="83, 83, 103, 103" href="#"
+                          alt="Something went wrong" onclick="changecolor(64, 224, 208, 1, 174, 72, 56)">
+                      </map>
+                    </div>
+                    <div class="inputsearch">
+                      <h3 style="text-align: center">Type color</h3>
+                      <div class="input-group">
+                        <input id="myInput" class="form-control width100" onkeydown="EnterPressed(event)">
+                        <span class="input-group-btn">
+                          <button class="btn btn-info" onclick="searchfor()">Enter</button>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="row">
+                <div class="col-12" id="display" style="border: 1px solid grey;"></div>
+                <div class="col-12" style="border: 1px solid grey; height: 100%; padding-bottom: 10px;">
+                  <div class="ranges-menu" style="padding: 15px;">
+                    <div class="row">
+                      <div class="col-2">
+                        <p><strong>Red:</strong></p>
+                      </div>
+                      <div class="col-2">
+                        <p><strong id="redvalue"></strong></p>
+                      </div>
+                      <div class="col-8"><input type="range" min="0" max="255" step="1" id="red" value="128"></div>
+                    </div>
+                    <div class="row">
+                      <div class="col-2">
+                        <p><strong>Green:</strong></p>
+                      </div>
+                      <div class="col-2">
+                        <p><strong id="greenvalue"></strong></p>
+                      </div>
+                      <div class="col-8"><input type="range" min="0" max="255" step="1" id="green" value="0"></div>
+                    </div>
+                    <div class="row">
+                      <div class="col-2">
+                        <p><strong>Blue:</strong></p>
+                      </div>
+                      <div class="col-2">
+                        <p><strong id="bluevalue"></strong></p></strong></p>
+                      </div>
+                      <div class="col-8"><input type="range" min="0" max="255" step="1" id="blue" value="128"></div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                      <div class="col-2">
+                        <p><strong>Opacity:</strong></p>
+                      </div>
+                      <div class="col-2">
+                        <p><strong id="alphavalue"></strong></p>
+                      </div>
+                      <div class="col-8"><input type="range" min="0" max="1" step="0.01" id="alpha" value="100"></div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                      <div class="col-2">
+                        <p><strong>Hue:</strong></p>
+                      </div>
+                      <div class="col-2">
+                        <p><strong id="huevalue"></strong></p>
+                      </div>
+                      <div class="col-8"><input type="range" min="0" max="360" step="1" id="hue" value="300"></div>
+                    </div>
+                    <div class="row">
+                      <div class="col-2">
+                        <p><strong>Saturation:</strong></p>
+                      </div>
+                      <div class="col-2">
+                        <p><strong id="saturationvalue"></strong></p>
+                      </div>
+                      <div class="col-8"><input type="range" min="0" max="100" step="1" id="saturation" value="100">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-2">
+                        <p><strong>Lightness:</strong></p>
+                      </div>
+                      <div class="col-2">
+                        <p><strong id="lightnessvalue"></strong></p>
+                      </div>
+                      <div class="col-8"><input type="range" min="0" max="100" step="1" id="lightness" value="25"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="container">
+          <div class="text-upper-wrapper" style="padding-top: 100px;">
+            <div class="text-wrapper" style="padding: 10px">
+              <h3 style="margin-left: 10px; text-align: justify;">RGB</h3>
+              <p style="margin-left: 10px; text-align: justify;">The RGB (red, green, blue) color model is an additive color model in which
+                red,
+                green, and blue light are added together in various degrees (ranging from 0 to 255) to
+                reproduce a broad array of colors.</p>
+              <p style="margin-left: 10px; text-align: justify;">The main purpose of the RGB color model is for the sensing,
+                representation, and display of images in electronic systems,
+                such as televisions and computers, though it has also been used
+                in conventional photography. Before the electronic age, the RGB
+                color model already had a solid theory behind it, based in
+                human perception of colors. </p>
+              <h3 style="margin-left: 10px; text-align: justify;">Opacity</h3>
+              <p style="margin-left: 10px; text-align: justify;">Opacity - the quality of lacking transparency or translucence.
+                0% is absolutely transparent, 100% is absolutely non-transparent.</p>
+              <h3 style="margin-left: 10px; text-align: justify;">HSL</h3>
+              <p style="margin-left: 10px; text-align: justify;">HSL (hue, saturation, lightness) and HSV (hue, saturation,
+                value) are alternative representations of the RGB color model,
+                designed in the 1970s by computer graphics researchers to more
+                closely align with the way human vision perceives color-making
+                attributes. In these models, colors of each hue are arranged
+                in a radial slice, around a central axis of neutral colors
+                which ranges from black at the bottom to white at the top.
+                The HSV representation models the way paints of different
+                colors mix together, with the saturation dimension resembling
+                various tints of brightly colored paint, and the value
+                dimension resembling the mixture of those paints with varying
+                amounts of black or white paint. The HSL model attempts to
+                resemble more perceptual color models such as the Natural
+                Color System (NCS) or Munsell color system, placing fully
+                saturated colors around a circle at a lightness value of ​1⁄2,
+                where a lightness value of 0 or 1 is fully black or white,
+                respectively. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+    <script src="script0.js"></script>
+    <script src="autocomplete.js"></script>
+
+
+</html>
